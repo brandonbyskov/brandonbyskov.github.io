@@ -1,0 +1,81 @@
+﻿body 
+{
+    background-color:#E8E8E8;
+    background-image:url('/images/gradient.png');
+    background-repeat:repeat-x;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+a
+{
+    color:inherit;
+    text-decoration:inherit;
+}
+p
+{
+    text-indent:0px;
+    text-align:justify;
+    line-height:150%;
+}
+div.header
+{
+    width:960px;
+    margin:auto;
+}
+#logo
+{
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:25px;
+}
+
+table.headerlinks
+{
+    border-collapse:collapse;
+}
+table.headerlinks text
+{
+    margin:3px 7px 3px 8px;
+}
+table.headerlinks td
+{
+    border: 2px solid black;
+    background-color:#505050;
+    color:#00ADE0;
+    padding:3px 7px 3px 8px;
+    font-weight:900;
+    font-size: 125%;
+    font-family:Times New Roman;
+    letter-spacing:1px;
+    width:auto;
+}
+#thisPage
+{
+    color:Black;
+    background:#E8E8E8;
+    border-bottom-color:#E8E8E8;
+}
+#lastPage
+{
+    background-color:transparent;
+    border-width:0px;
+    border-bottom:2px solid black;
+    width:100%;
+}
+table.headerlinks td.midpage
+{
+    background-color:transparent;
+    border-top-width:0px;
+    padding:0px 2px 0px 2px;
+}
+
+div.MainPage
+{
+    background-color:#E8E8E8;
+    width:916px;
+    padding:20px;
+    margin:auto;
+    border-left:2px solid Black;
+    border-right:2px solid Black;
+    border-bottom:2px solid Black;
+}

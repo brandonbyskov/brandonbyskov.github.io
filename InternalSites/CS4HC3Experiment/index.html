@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CS 4HC3 Experiment</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="allWords.js"></script>
+<script src="scripts.js"></script>
+
+</head>
+<body>
+<div class="outerBox" id="outerBox">
+<div class="controlBox" id="startBox" onClick="startExperiment()">Start Experiment</div>
+<div class="rulesBox" id="rulesBox"><div style="font-size:.8em;">[ This Rules box was not present in the acutal experiment, but I've added it here to explain the rules for anyone interested. ]</div><br />
+Tested to work in Mozilla Firefox version 25.<br />
+Requires a screen with vertical resolution of 1200 pixels.<br /><br />
+Rules:<br />
+1. When experiment has started, the user will be presented with a word. The user must read and rememeber the word, then click on it. Then the user much find the word in the presented list.<br />
+2. If the correct word in the list is clicked, a new trial will begin. If an incorrect word in the list is clicked, the screen will flash red to indicate this, and a new trial will begin.<br />
+3. The user must complete 120 trials. This should take approximated 5 miuntes.<br />
+4. A counter at the bottom-right corner will keep track of the number of trials.<br />
+5. Users are asked to read the lists form top to bottom. <br />
+6. A timer will time the user from the time the initial word is clicked, to the time that word in the list is clicked.<br />
+7. When no list is displayed on the screen, the user is not being timed. The user user may take a break if there is no list displayed on the screen.</div>
+<div class="controlBox" id="submitBox" onClick="submitFinalResults()">Submit Results</div>
+<div class="wordBoxContainer"><div class="wordBox" id="wordBox" onClick="clickWord()" >Word</div></div>
+<div class="trialCountBox" id="trialCountBox"></div>
+<div class="listBox" id="listBox">
+<table class="listTable" id="listTable">
+<tr><td><div class="textHolder"><span class="listItem" onclick="clickListItem(this)"></span></div></td></tr>
+<tr><td><div class="textHolder"><span class="listItem" onclick="clickListItem(this)"></span></div></td></tr>
+<tr><td><div class="textHolder"><span class="listItem" onclick="clickListItem(this)"></span></div></td></tr>
+<tr><td><div class="textHolder"><span class="listItem" onclick="clickListItem(this)"></span></div></td></tr>
+<tr><td><div class="textHolder"><span class="listItem" onclick="clickListItem(this)"></span></div></td></tr>
+<tr><td><div class="textHolder"><span class="listItem" onclick="clickListItem(this)"></span></div></td></tr>
+<tr><td><div class="textHolder"><span class="listItem" onclick="clickListItem(this)"></span></div></td></tr>
+<tr><td><div class="textHolder"><span class="listItem" onclick="clickListItem(this)"></span></div></td></tr>
+</table>
+</div>
+</div>
+<div class="errorBox" id="errorBox"></div>
+</body>
+</html>

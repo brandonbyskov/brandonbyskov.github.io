@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="MainStyle.css" />
+    <script type="text/javascript" src="Headerscripts.js"></script>
+    <title>Infinity Home</title>
+    <script type="text/javascript">
+        function underline(event) {
+            document.getElementById(event.currentTarget.id).style.textDecoration = "underline";
+        }
+        function remove_underline(event) {
+            document.getElementById(event.currentTarget.id).style.textDecoration = "none";
+        }
+    </script>
+    <style type="text/css">
+        div.home_image
+        {
+            margin:auto;
+            background-image:url('images/homeimage3.gif');
+            background-repeat:no-repeat;
+            border:2px solid #00ADE0;
+            height:360px;
+            width:640px;
+        }
+        table.homeimagelinks
+        {
+            margin:auto;
+            border-collapse:collapse;
+        }
+        .homeimagelinks td
+        {
+        width:320px;
+        font-size:x-large;
+        }
+    </style>
+</head>
+<body>
+<div class="header" ><a href="home.htm"><img border="" id="logo" src="./images/logo2.png" alt="Infinity" /></a><table class="headerlinks"><tr>
+<td id="thisPage" onmouseover="header_get_focus(event)" onmouseout="header_lost_focus(event)"><a href="home.htm">Home</a></td><td class="midpage"></td>
+<td id="header2" onmouseover="header_get_focus(event)" onmouseout="header_lost_focus(event)"><a href="design.php">Products</a></td><td class="midpage"></td>
+<td id="header3" onmouseover="header_get_focus(event)" onmouseout="header_lost_focus(event)"><a href="about.htm">About&nbsp;Infinity</a></td><td class="midpage"></td>
+<td id="header4" onmouseover="header_get_focus(event)" onmouseout="header_lost_focus(event)"><a href="contact.htm">Contact&nbsp;Us</a></td>
+<td id="lastPage"></td></tr></table></div>
+
+<div class="MainPage">
+<div class="home_image"></div>
+<table class="homeimagelinks" style="text-align:center"><tr><td><a href="design.php" id="try_it" onmouseover="underline(event)" onmouseout="remove_underline(event)">Try It</a></td><td><a href="about.htm" id="learn_it" onmouseover="underline(event)" onmouseout="remove_underline(event)">Learn About It</a></td></tr></table></div>
+
+
+</body>
+</html>

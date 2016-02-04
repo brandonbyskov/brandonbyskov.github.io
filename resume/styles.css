@@ -1,0 +1,90 @@
+/* CSS Document */
+* { margin: 0; padding: 0; border: 0; }
+
+body
+{
+	background-color:#999999;
+}
+
+.page
+{
+	width:8.5in;
+	height:11in;
+	background-color:white;
+	border:1px solid grey;
+}
+
+.resume
+{
+	margin-left:.75in;
+	margin-right:.65in;
+	margin-top:.69in;
+	font-family:"Segoe UI";
+	font-size:11pt
+}
+
+.resume > .header
+{
+	padding-bottom:12pt;
+}
+
+.title
+{
+	width:100%;
+	border-bottom:1px solid black;
+	font-family:"Cambria";
+	font-size:20pt;
+}
+
+.section > .header
+{
+	margin-left:-9pt;
+	font-size:12pt;
+	font-weight:bold;	
+}
+
+.section > .body
+{
+	border-left:1px solid #999999;
+}
+
+.subsection
+{
+	margin-bottom:12pt;
+}
+
+.subsection > .header
+{
+	width:100%;
+}
+
+.subsection > .header > .label, .dates
+{
+	font-weight:bold;
+}
+
+.subsection > .header > .label
+{
+	margin-left:9pt;
+	display:inline-block;
+}
+
+.subsection > .header > .dates
+{
+	float:right;
+}
+
+.subsection > .header > .location
+{
+	margin-left:9pt;
+}
+
+.subsection ul
+{
+	padding-left:22.5pt;
+}
+
+.profile_link
+{
+	font-weight:bold;
+}
