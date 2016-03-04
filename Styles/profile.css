@@ -11,39 +11,39 @@ Semilight to an appropriate font-weight.
 @font-face {
     font-family: "Segoe UI";
     font-weight: 200;
-    src: local("Segoe UI Light");
+    src:url('../Fonts/segoeuil.ttf') format('truetype');
 }
 @font-face {
     font-family: "Segoe UI";
     font-weight: 300;
-    src: local("Segoe UI Semilight");
+    src:url('../Fonts/segoeuisl.ttf') format('truetype');
 }
 @font-face {
     font-family: "Segoe UI";
     font-weight: 400;
-    src: local("Segoe UI");
+    src:url('../Fonts/segoeui.ttf') format('truetype');
 }
 @font-face {
     font-family: "Segoe UI";
     font-weight: 600;
-    src: local("Segoe UI Semibold");
+    src:url('../Fonts/segoeuisb.ttf') format('truetype');
 }
 @font-face {
     font-family: "Segoe UI";
     font-weight: 700;
-    src: local("Segoe UI Bold");
+    src:url('../Fonts/segoeuib.ttf') format('truetype');
 }
 @font-face {
     font-family: "Segoe UI";
     font-style: italic;
     font-weight: 400;
-    src: local("Segoe UI Italic");
+    src:url('../Fonts/segoeuii.ttf') format('truetype');
 }
 @font-face {
     font-family: "Segoe UI";
     font-style: italic;
     font-weight: 700;
-    src: local("Segoe UI Bold Italic");
+    src:url('../Fonts/segoeuibi.ttf') format('truetype');
 }
 
 @font-face {
@@ -193,7 +193,8 @@ body
 .top_menu h1
 {
 	font-size:5vh;	
-    margin:0;  
+    margin:0;
+    font-weight:200;
 }
 
 .top_menu h3
