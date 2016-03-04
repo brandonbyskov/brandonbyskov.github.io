@@ -1,20 +1,77 @@
 /* CSS Document */
-a, div, table, tr, td, img
-{
-	margin:0;
-	padding:0;
-	border-collapse:collapse;
-}
 /*ul
 {
     list-style-type: none;
 }*/
 
+/* from Microsoft Metro stylesheet:
+Explicitly define a Segoe UI font-family so that we can assign Segoe UI 
+Semilight to an appropriate font-weight.
+*/
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 300;
+    src: local("Segoe UI Semilight");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 600;
+    src: local("Segoe UI Semibold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    src: local("Segoe UI Bold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Segoe UI Italic");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Segoe UI Bold Italic");
+}
+
+@font-face {
+	font-family: "Segoe UI";
+	src:url('../Fonts/segoeui.ttf') format('truetype');
+}
+
+a, div, table, tr, td, img
+{
+	margin:0;
+	padding:0;
+	border-collapse:collapse;
+	font-family:"Segoe UI";
+	font-weight:400;
+}
+
+*
+{
+	font-family:"Segoe UI";
+	font-weight:400;
+}
 
 body
 {
 	font-size:24pt;
 	-webkit-font-smoothing: antialiased;
+	font-family:"Segoe UI";
+	font-weight:400;
 }
 
 .page_container a
@@ -61,7 +118,7 @@ body
 }
 .right_menu
 {
-	widht:100%;
+	width:100%;
 	height:100%;
 
 	background-color:#E0E8FF;
@@ -129,23 +186,19 @@ body
 	padding-top:4vh;
 	padding-left:1vw;
 	background-color: #EEF8EE;
-	border-bottom:1px #69C solid;	
-	font-family:"Segoe UI";
+	border-bottom:1px #69C solid;
 	color:#002838;
 }
 
 .top_menu h1
 {
-	font-size:5vh;
-	font-weight:100;
-	
+	font-size:5vh;	
     margin:0;  
 }
 
 .top_menu h3
 {
 	font-size:2vh;
-	font-weight:100;
 	margin:0;
 	margin-left:3vh;	 
 }
@@ -180,8 +233,7 @@ body
 	margin-top:1vh;
 	margin-bottom:1vh;
 	position:fixed;
-	z-index:0;
-	
+	z-index:0;	
 }
 
 .tile_container
@@ -195,14 +247,12 @@ body
 	float:left;
 	background-color:#69C;
 	transition:opacity 1s;
-
 }
 
 .tile_container:hover
 {
 	box-shadow:0px 0px 0px 1px #002838;
 	cursor:pointer;
-
 }
 
 .tile_container:hover .tile_heading
@@ -213,12 +263,9 @@ body
 
 .tile_content_container
 {
-
 	wdith:25vw;
 	height:17vh;	
-
-	overflow:hidden;
-	
+	overflow:hidden;	
 }
 .tile_content_border
 {
@@ -255,8 +302,6 @@ body
 	padding-left:1vw;
 	color:#EEE;
 	background-color:#002838;
-	font-family:"Segoe UI";
-
 	font-size:3vh;
 
 }
@@ -272,7 +317,6 @@ body
 {
 	width:100%;
 	max-width:23vw;
-	font-family:"Segoe UI";
 	padding-top:1vh;
 	padding-bottom:1vh;
 	padding-left:1vw;
@@ -283,8 +327,6 @@ body
 {
 	height:5vh;
 	color:#FFF;
-	
-	font-weight:400;
 	font-size:2.5vh;
 }
 
@@ -298,7 +340,6 @@ body
 {
 	color:#FFF;
 	padding-left:.25vw;
-	font-weight:100;
 	font-size:2vh;
 }
 
@@ -306,7 +347,6 @@ body
 {
 	color:#FFF;
 	margin-left:.5vw;
-	font-weight:100;
 	font-size:1.5vh;
 }
 
@@ -367,7 +407,6 @@ body
 	padding-right:2vw;
 	font-family:"Segoe UI";
 	color:white;
-	font-weight:100;
 }
 
 
@@ -387,9 +426,6 @@ body
 
 .metro_details a
 {
-
-
-	font-weight:200;
 	text-decoration:none;
 	color:#CCC;
 }
@@ -403,7 +439,6 @@ body
 {
 	font-size:1.5em;
 	font-size:2.5vw;
-	font-weight:100;
 }
 .metro_details.resume_details h1
 {
@@ -414,14 +449,12 @@ body
 {
 	font-size:1em;
 	font-size:1.75vw;
-	font-weight:100;
 }
 
 .metro_details h3
 {
 	font-size:.6em;
 	font-size:1vw;
-	font-weight:400;
 	padding-left:.75em;
 }
 
@@ -429,7 +462,6 @@ body
 {
 	font-size:.8vw;
 	font-size:.5em;
-	font-weight:200;
 	margin-left:1.5em;
 	padding-left:.5em;
 	max-width:40em;
@@ -438,7 +470,6 @@ body
 .metro_details ul,il
 {
 	font-size:.5em;
-	font-weight:200;
 }
 
 .resume_object
@@ -453,7 +484,6 @@ body
 {
 	padding-top:.3em;
 	font-size:1.5em;
-	font-weight:100;
 }
 
 .details_section
@@ -464,7 +494,6 @@ body
 	padding-top:.3em;
 	padding-bottom:.2em;
 	font-size:1em;
-	font-weight:100;
 }
 
 
@@ -509,7 +538,6 @@ template:
 {
 	padding-left:.5em;
 	font-size:.6em;
-	font-weight:400;
 }
 
 .details_item .subtitle
@@ -517,7 +545,6 @@ template:
 	margin-left:3.5em;
 	padding-left:.5em;
 	font-size:.5em;
-	font-weight:200;
 	color:#CCC;
 }
 
@@ -541,7 +568,6 @@ template:
 .details_item_description
 {
 	font-size:.5em;
-	font-weight:200;
 }
 
 .details_item_attachment_container
@@ -559,7 +585,6 @@ template:
 	background-position:left center;
 	border-collapse:separate;
 	font-size:.6em;
-	font-weight:200;
 	color:#CCC;
 
 }
@@ -623,7 +648,7 @@ template:
 }
 
 /*
-Conact Start
+Contact Start
 */
 .details_item.contact_container
 {
@@ -642,11 +667,10 @@ Conact Start
 		 -10px -0px 0px -9px rgba(144,144,144,.5);
 }
 
-.details_contract_title
+.details_contact_title
 {
 	padding-left:.4em;
 	font-size:.5em;
-	font-weight:400;
 }
 .contact_table
 {
@@ -658,8 +682,6 @@ Conact Start
 }
 .contact_table td.label
 {
-
-	font-weight:600;
 	padding-right:1em;
 }
 
